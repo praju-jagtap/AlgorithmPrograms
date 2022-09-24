@@ -8,7 +8,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.Using Binary Search To Find Word From WordList\n2.To Print Prime No Between 0-1000\n3.Bubble Sort Algorithm\n4.Anagram Detection\n5.In Prime No find Palindrome and Anagarm\n");
+                Console.WriteLine("1.Using Binary Search To Find Word From WordList\n2.To Print Prime No Between 0-1000\n3.Bubble Sort Algorithm\n4.Anagram Detection\n5.In Prime No find Palindrome and Anagarm\n6.Replace Messaage Using String Replace Function\n");
                 Console.WriteLine("Please Enter Your Choice : \n");
                 Console.WriteLine("---------------------------\n");
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -35,6 +35,12 @@
                         primeAnagarm.PrimeNumber();
                         primeAnagarm.Palindrome();
                         primeAnagarm.AnagramCheck();
+                        break;
+                    case 6:
+                        StringReplace stringReplace = new StringReplace();
+                        stringReplace.Validate("\nHello << name >>, We have your fullname as << full name >> in our system.", "abc");
+                        stringReplace.ValidateNumber("your contact number is << contactno >>.", "91 8349222345");
+                        stringReplace.ValidateDate("Thank you BridgeLabz << Date >>.\n", "24/10/2022");
                         break;
 
                     default:
